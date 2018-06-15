@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>3D Game Design</title>
+<script src="cannon.js"></script>
+<script src="babylon.js"></script>
+<script src="babylon.objFileLoader.min.js"></script> 
+<style>
+html, body {
+overflow: hidden;
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+} 
+#renderCanvas {
+width: 100%;
+height: 100%;
+touch-action: none;
+} 
+</style> 
+<script> 
+function start() {
+var canvas = document.getElementById('renderCanvas'); 
+var engine = new BABYLON.Engine(canvas, true); 
+var scene = new BABYLON.Scene(engine); 
+
+scene.clearColor = new BABYLON.Color3(.0, .651, .865); 
+
+
+engine.runRenderLoop(scene.render.bind(scene));
+window.addEventListener('resize', engine.resize.bind(engine)); 
+
+
+
+
+
+//pony
+create object "pony"=new object
+
+
+		<iframe src="https://clara.io/embed/2cf680ad-ed9c-4164-8fff-92440ce655b9?renderer=webgl" width="800" height="600" allowfullscreen></iframe>
+
+
+
+}
+</script> 
+
+</head> 
+<body onLoad="start()"> 
+<canvas id="renderCanvas"></canvas> 
+</body> 
+</html> 
